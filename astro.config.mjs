@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
-import netlify from '@astrojs/netlify/static'; // Ensure you're using the static adapter
+import netlify from '@astrojs/netlify/static';
 
 export default defineConfig({
+  site: 'https://www.kaicex.pro',
   output: 'static',
   adapter: netlify({
-    assets: 'dist', // Specify the directory for static assets
+    assets: 'dist',
   }),
 });

@@ -11,7 +11,10 @@ const bottomSlides: Slide[] = slidesData.bottomSlides as any;
 const projects: Project[] = projectsData as any;
 ---
 
-<Layout title="Webflow Designer / Kayrat">
+<Layout 
+    title="Kayrat Medeshov - Frontend Developer & Product Designer | Portfolio"
+    description="Frontend Developer and Product Designer with 5 years of experience. Specializing in Webflow development, UI/UX design, and creating engaging web experiences. View my portfolio and projects."
+>
     <div id="webgl" data-astro-cid-pp7spb2p>
         <canvas data-astro-cid-pp7spb2p></canvas>
     </div>
@@ -42,7 +45,7 @@ const projects: Project[] = projectsData as any;
 
     <main data-astro-cid-j7pv25f6>
         <section class="home-content" data-astro-cid-j7pv25f6>
-            <h1 class="home-headline split h1">~Kayrat Medeshov~</h1>
+            <h1 class="home-headline split h1">Kayrat Medeshov</h1>
             
             <h2 class="home-sub-headline split h2">About</h2>
             <p class="home-about-text split text">
@@ -50,7 +53,7 @@ const projects: Project[] = projectsData as any;
                 Masters Degree in CS. I craft pet projects in my leisure hours.
             </p>
 
-            <h2 class="home-sub-headline split h2">Projects</h2>
+            <h3 class="home-sub-headline split h2">Projects</h3>
             <ul class="projects-nav" data-astro-cid-j7pv25f6>
                 {projects.map(project => (
                     <li class="text split" data-astro-cid-j7pv25f6>

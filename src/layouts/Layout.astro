@@ -4,53 +4,75 @@ import '../styles/components.css';
 
 interface Props {
 	title: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "Frontend Developer and Product Designer with 5 years of experience. Specializing in Webflow development, UI/UX design, and creating engaging web experiences." } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Webflow Product Designer" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Kayrat Medeshov",
+			"jobTitle": "Frontend Developer & Product Designer",
+			"url": "https://www.kaicex.pro",
+			"sameAs": [
+				"https://www.behance.net/kaicex",
+				"https://www.t.me/kaicex",
+				"https://twitter.com/uxsexy"
+			],
+			"knowsAbout": ["Frontend Development", "Webflow", "Product Design", "UI/UX Design"],
+			"alumniOf": {
+				"@type": "EducationalOrganization",
+				"name": "Masters Degree in Computer Science"
+			}
+		}
+		</script>
 
 		<!-- Open Graph -->
-		<meta property="og:title" content="Medeshov Kayrat" />
+		<meta property="og:title" content={title} />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://www.kaicex.pro" />
-		<meta name="og:image" content="https://images.prismic.io/kaicex/ZswxfUaF0TcGJYm4_meta.jpg?auto=format,compress" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://images.prismic.io/kaicex/ZswxfUaF0TcGJYm4_meta.jpg?auto=format,compress" />
 		<meta property="og:image:width" content="1600" />
 		<meta property="og:image:height" content="1200" />
-		<meta name="og:site_name" property="og:site_name" content="~Medeshov Kayrat" />
-		<meta name="og:description" property="og:description" content="Webflow Product Designer" />
+		<meta property="og:site_name" content="Kayrat Medeshov Portfolio" />
+		<meta property="og:description" content={description} />
 		<meta property="og:locale" content="en_IE" />
 
 		<!-- Favicon -->
-		<link rel="icon" href="https://kaicex.cdn.prismic.io/kaicex/ZswyPkaF0TcGJYnL_logo.svg" />
-		<link data-hid="shortcut-icon" rel="shortcut icon" href="https://images.prismic.io/kaicex/Zswye0aF0TcGJYnP_favicon.jpg?auto=format,compress" />
-		<link data-hid="apple-touch-icon" rel="apple-touch-icon" href="https://images.prismic.io/kaicex/Zswyx0aF0TcGJYnW_logo.jpg?auto=format,compress" sizes="512x512" />
+		<link rel="icon" type="image/svg+xml" href="https://kaicex.cdn.prismic.io/kaicex/ZswyPkaF0TcGJYnL_logo.svg" />
+		<link rel="shortcut icon" href="https://images.prismic.io/kaicex/Zswye0aF0TcGJYnP_favicon.jpg?auto=format,compress" />
+		<link rel="apple-touch-icon" href="https://images.prismic.io/kaicex/Zswyx0aF0TcGJYnW_logo.jpg?auto=format,compress" sizes="512x512" />
 
 		<!-- Twitter -->
-		<meta name="twitter:title" content="Kayrat Medeshov" />
 		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content="https://images.prismic.io/kaicex/ZswxfUaF0TcGJYm4_meta.jpg?auto=format,compress" />
-		<meta name="twitter:description" content="Webflow Developer" />
 		<meta name="twitter:creator" content="@uxsexy" />
 		<meta name="twitter:site" content="@uxsexy" />
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-title" content="Medeshov Kayrat" />
+		<meta name="apple-mobile-web-app-title" content="Kayrat Medeshov" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="theme-color" content="#16161D" />
 		<meta name="format-detection" content="telephone=no" />
-		<meta name="robots" content="all" />
-		<link rel="canonical" href="https://www.kaicex.pro" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href={canonicalURL} />
 	</head>
 	<body>
 		<slot />
