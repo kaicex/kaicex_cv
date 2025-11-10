@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   mediaType: 'video' | 'image';
   mediaSrc: string;
+  posterSrc?: string; // Optional poster image for videos
   aspectRatio: number;
 }
 

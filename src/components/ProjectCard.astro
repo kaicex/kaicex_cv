@@ -36,7 +36,14 @@ const { project } = Astro.props;
         <div class="media-wrapper" data-astro-cid-tkm2rszc>
             {project.mediaType === 'video' ? (
                 <div class="video is-paused" style={`--ar: ${project.aspectRatio}`} data-astro-cid-tlwdjgud>
-                    <video playsinline loop data-astro-cid-tlwdjgud>
+                    <video 
+                        playsinline 
+                        loop 
+                        muted
+                        preload="metadata"
+                        poster={project.posterSrc}
+                        data-astro-cid-tlwdjgud
+                    >
                         <source src={project.mediaSrc} type="video/mp4" data-astro-cid-tlwdjgud>
                     </video>
                     <div class="controls play" data-astro-cid-tlwdjgud>
@@ -47,7 +54,12 @@ const { project } = Astro.props;
                     </div>
                 </div>
             ) : (
-                <img src={project.mediaSrc} alt={project.title} />
+                <img 
+                    src={project.mediaSrc} 
+                    alt={project.title}
+                    loading="lazy"
+                    decoding="async"
+                />
             )}
         </div>
     </div>
