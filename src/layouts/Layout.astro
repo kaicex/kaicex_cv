@@ -1,4 +1,7 @@
 ---
+import '../styles/main.css';
+import '../styles/components.css';
+
 interface Props {
 	title: string;
 }
@@ -48,12 +51,9 @@ const { title } = Astro.props;
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="robots" content="all" />
 		<link rel="canonical" href="https://www.kaicex.pro" />
-
-		<link rel="stylesheet" href="/src/styles/main.css" />
-		<link rel="stylesheet" href="/src/styles/components.css" />
 	</head>
 	<body>
 		<slot />
-		<script src="/src/scripts/main.js"></script>
+		<script src="../scripts/main.js"></script>
 	</body>
 </html>
