@@ -31,23 +31,37 @@ npm run build
 
 Output in `./dist/`
 
-## 🌐 Deployment
-
-Deployed on Netlify with automatic builds from main branch.
-
 ## 📁 Project Structure
 
 ```
 /
 ├── public/
-│   ├── fonts/          # Custom fonts
-│   └── favicon.svg
+│   ├── fonts/              # Custom fonts
+│   └── kayrat_medeshov_dev_cv.pdf
 ├── src/
-│   ├── components/     # Reusable components
-│   ├── layouts/        # Page layouts
-│   └── pages/          # Routes
+│   ├── components/         # Reusable Astro components
+│   ├── data/              # JSON data files
+│   │   ├── projects.json  # Portfolio projects
+│   │   ├── slides.json    # Archive gallery slides
+│   │   └── README.md      # Data editing guide
+│   ├── layouts/           # Page layouts
+│   ├── pages/             # Routes
+│   ├── scripts/           # JavaScript files
+│   ├── styles/            # CSS files
+│   │   ├── main.css       # Base styles
+│   │   └── components.css # Component styles
+│   └── types.ts           # TypeScript types
 └── astro.config.mjs
 ```
+
+## 📝 Editing Content
+
+All content is stored in JSON files for easy editing:
+
+- **Projects**: Edit `src/data/projects.json` to add/modify portfolio projects
+- **Gallery**: Edit `src/data/slides.json` to update archive gallery images
+
+See `src/data/README.md` for detailed instructions.
 
 ## 🎨 Featured Projects
 
@@ -58,7 +72,11 @@ Deployed on Netlify with automatic builds from main branch.
 - **User Interviews** - Research platform
 - **Treet** - Resale marketplace
 - **JetsBetter** - Aviation service
-- **Epoch** - Time management tool
+- **Epoch** - Clothing brand e-commerce
+
+## 🌐 Deployment
+
+Deployed on Netlify with automatic builds from main branch.
 
 ## 📧 Contact
 

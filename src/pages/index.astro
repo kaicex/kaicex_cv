@@ -2,8 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import ArchiveSlide from '../components/ArchiveSlide.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import { topSlides, bottomSlides } from '../data/slides';
-import { projects } from '../data/projects';
+import type { Project, Slide } from '../types';
+import slidesData from '../data/slides.json';
+import projectsData from '../data/projects.json';
+
+const topSlides: Slide[] = slidesData.topSlides as any;
+const bottomSlides: Slide[] = slidesData.bottomSlides as any;
+const projects: Project[] = projectsData as any;
 ---
 
 <Layout title="Webflow Designer / Kayrat">
