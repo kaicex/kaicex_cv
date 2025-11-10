@@ -52,37 +52,115 @@ const projects: Project[] = projectsData as any;
                 I am a Frontend Developer, I build value through design. Product Designer with 5 years of experience. 
                 Masters Degree in CS. I craft pet projects in my leisure hours.
             </p>
+            <span class="text split" style="color: white; display: block; margin-top: -0.2rem;">Show more about my skills</span>
 
             <h3 class="home-sub-headline split h2">Projects</h3>
             <ul class="projects-nav" data-astro-cid-j7pv25f6>
                 {projects.map(project => (
-                    <li class="text split" data-astro-cid-j7pv25f6>
-                        <a href={`#${project.id}`} data-astro-cid-j7pv25f6>{project.title}</a>
+                    <li class="text" data-astro-cid-j7pv25f6>
+                        <a href={`#${project.id}`} data-astro-cid-j7pv25f6>
+                            <span class="project-icon">
+                                <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                                </svg>
+                                <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                                </svg>
+                            </span>
+                            <span class="split">{project.title}</span>
+                        </a>
                     </li>
                 ))}
             </ul>
 
-            <h2 class="home-sub-headline split h2">Links</h2>
+            <h2 class="home-sub-headline split h2">Tools & Stack</h2>
             <ul data-astro-cid-j7pv25f6>
                 <li class="text" data-astro-cid-j7pv25f6>
-                    <p class="split">
-                        <a target="_blank" rel="noopener" href="https://www.t.me/kaicex">Telegram</a>
-                    </p>
+                    <p class="split">Next.js · React · TypeScript</p>
                 </li>
                 <li class="text" data-astro-cid-j7pv25f6>
-                    <p class="split">
-                        <a target="_blank" rel="noopener" href="https://www.behance.net/kaicex">Behance</a>
-                    </p>
+                    <p class="split">Make · N8N · Zapier · Airtable</p>
                 </li>
                 <li class="text" data-astro-cid-j7pv25f6>
-                    <p class="split">
-                        <a href="mailto:kayrat.medeshov@gmail.com">Email</a>
-                    </p>
+                    <p class="split">Webflow · Wized · Memberstack</p>
                 </li>
                 <li class="text" data-astro-cid-j7pv25f6>
-                    <p class="split">
-                        <a target="_blank" rel="noopener" href="/kayrat_medeshov_dev_cv.pdf">CV</a>
-                    </p>
+                    <p class="split">Figma · GSAP · Spline</p>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <p class="split">HTML · CSS · JS · API Integrations</p>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <p class="split">Optimization and Basic SEO settings</p>
+                </li>
+            </ul>
+
+            <h2 class="home-sub-headline split h2">Links</h2>
+            <ul class="links-list" data-astro-cid-j7pv25f6>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <a target="_blank" rel="noopener" href="https://www.t.me/kaicex">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                        </span>
+                        <span class="split">Telegram</span>
+                    </a>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <a target="_blank" rel="noopener" href="https://www.behance.net/kaicex">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                        </span>
+                        <span class="split">Behance</span>
+                    </a>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <a href="mailto:kayrat.medeshov@gmail.com">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                        </span>
+                        <span class="split">Email</span>
+                    </a>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <a target="_blank" rel="noopener" href="/kayrat_medeshov_dev_cv.pdf">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                        </span>
+                        <span class="split">Download CV</span>
+                    </a>
+                </li>
+                <li class="text" data-astro-cid-j7pv25f6>
+                    <a target="_blank" rel="noopener" href="https://t.me/cursora">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                            <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z"></path>
+                            </svg>
+                        </span>
+                        <span class="split">My Community</span>
+                    </a>
                 </li>
             </ul>
         </section>

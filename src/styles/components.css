@@ -696,3 +696,73 @@ body.is-archive span[data-astro-cid-ab5ug5lk] {
     max-width: 100vw
   }
 }
+
+/* Project icon in navigation */
+.projects-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-icon {
+  height: 9px;
+  width: 9px;
+  line-height: 1.2;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+@media screen and (min-width:1440px) {
+  .project-icon {
+    height: 11px;
+    width: 11px;
+  }
+}
+
+.project-icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: transform .7s var(--ease-in-out-quint);
+}
+
+.project-icon svg:last-child {
+  transform: translate3d(-200%, 200%, 0);
+}
+
+@media (any-hover:hover) {
+  .projects-nav a:hover .project-icon svg:first-child {
+    transform: translate3d(200%, -200%, 0);
+  }
+
+  .projects-nav a:hover .project-icon svg:last-child {
+    transform: translateZ(0);
+  }
+}
+
+
+
+/* Links list styling */
+.links-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.links-list .project-icon svg:last-child {
+  transform: translate3d(-200%, 200%, 0);
+}
+
+@media (any-hover:hover) {
+  .links-list a:hover .project-icon svg:first-child {
+    transform: translate3d(200%, -200%, 0);
+  }
+
+  .links-list a:hover .project-icon svg:last-child {
+    transform: translateZ(0);
+  }
+}

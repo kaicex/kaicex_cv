@@ -1,15 +1,5 @@
 [
   {
-    "id": "ch-harmony",
-    "title": "CH-Contrast Harmony",
-    "subtitle": "Webflow — GSAP",
-    "url": "https://ch-hermony.webflow.io/",
-    "description": "Designed and developed a portfolio website for Russian artist Varvara Cheltsova, showcasing her unique artistic style and background. Implemented GSAP for smooth animations and Lenis for enhanced scrolling experiences. The result is a visually striking and performant website that effectively presents the artist's work and story to a global audience.",
-    "mediaType": "video",
-    "mediaSrc": "https://kaicex.cdn.prismic.io/kaicex/Zs2gqkaF0TcGJa0U_2.harmony.mp4",
-    "aspectRatio": 0.56
-  },
-  {
     "id": "tentekpro",
     "title": "Tentek Webflow Library",
     "subtitle": "Webflow - Memberstack - Python",
@@ -17,6 +7,66 @@
     "description": "Developed a toolkit for Webflow developers to streamline page creation and add custom code without a Workspace plan. This project works with free Webflow plans and includes over 1,500 pre-built components. The toolkit enhances productivity and expands design possibilities for Webflow developers of all levels.",
     "mediaType": "video",
     "mediaSrc": "https://kaicex.cdn.prismic.io/kaicex/Zs2gKUaF0TcGJa0I_1.Tentek.mp4",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "boomerangme",
+    "title": "BoomerangMe",
+    "subtitle": "Webflow · JS · GHL (GoHighLevel) · AI Tools · N8N",
+    "url": "https://boomerangme.biz/",
+    "description": "Developed and optimized marketing websites and user flows for a loyalty-system SaaS. Handled integrations between Webflow, Make, and GHL; created custom JS features and assisted with UX/UI iterations and AI automations. Result: streamlined marketing funnel and automated onboarding for clients.",
+    "mediaType": "video",
+    "mediaSrc": "PLACEHOLDER_VIDEO_URL",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "screenoteka",
+    "title": "Screenoteka",
+    "subtitle": "Next.js · Contentful · Tailwind · Global Payments",
+    "url": "https://screenoteka.com/",
+    "description": "A Mobbin-style platform for Russian-language products, showcasing real-app UI patterns, categorized screens, and component references. I built the frontend architecture, optimized API fetching, and designed a structured CMS flow via Contentful. Integrated Global Payments for subscription and access management. Result: fast, monetized pattern library for designers and founders.",
+    "mediaType": "video",
+    "mediaSrc": "https://kaicex.cdn.prismic.io/kaicex/aRI9uLpReVYa4UOg_screenoteka.webm",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "paynet",
+    "title": "Paynet · 5x10 Agency",
+    "subtitle": "Webflow · Figma · GSAP",
+    "url": "https://www.paynet.uz",
+    "description": "Full-cycle development for Paynet payment system. Handled UX/UI design in Figma, Webflow development with custom animations, and SEO optimization. Delivered end-to-end solution from brief to launch.",
+    "mediaType": "video",
+    "mediaSrc": "PLACEHOLDER_VIDEO_URL",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "ayan",
+    "title": "Ayan Capital · 5x10 Agency",
+    "subtitle": "Webflow · Figma · Make",
+    "url": "https://www.ayancapital.co.uk",
+    "description": "Developed a professional website for Ayan Capital investment company. Created UX/UI design, implemented Webflow development with automations via Make, and optimized for SEO.",
+    "mediaType": "video",
+    "mediaSrc": "PLACEHOLDER_VIDEO_URL",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "aralash",
+    "title": "Aralash · 5x10 Agency",
+    "subtitle": "Webflow · Figma · Zapier",
+    "url": "https://www.aralash.uz",
+    "description": "Built a complete web solution for Aralash. Managed full development cycle including design, Webflow implementation, Zapier integrations, and SEO setup.",
+    "mediaType": "video",
+    "mediaSrc": "PLACEHOLDER_VIDEO_URL",
+    "aspectRatio": 0.56
+  },
+  {
+    "id": "ampy",
+    "title": "Ampy · 5x10 Agency",
+    "subtitle": "Webflow · Figma · GSAP",
+    "url": "https://www.ampy.co.uk",
+    "description": "Created a modern website for Ampy. Delivered full-cycle development from UX/UI design to Webflow implementation with smooth GSAP animations and SEO optimization.",
+    "mediaType": "video",
+    "mediaSrc": "PLACEHOLDER_VIDEO_URL",
     "aspectRatio": 0.56
   },
   {
