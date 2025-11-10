@@ -1,0 +1,23 @@
+---
+import type { Slide } from '../data/slides';
+
+interface Props {
+  slide: Slide;
+}
+
+const { slide } = Astro.props;
+---
+
+<div 
+    data-width={slide.width} 
+    data-height={slide.height} 
+    class={`slide ${slide.orientation}`} 
+    data-astro-cid-pp7spb2p
+>
+    <img
+        src={slide.src}
+        loading="lazy"
+        style={`aspect-ratio: ${slide.width} / ${slide.height}`}
+        alt=""
+    />
+</div>

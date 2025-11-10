@@ -1,0 +1,41 @@
+export interface Slide {
+  width: number;
+  height: number;
+  orientation: 'horizontal' | 'vertical';
+  src: string;
+}
+
+export const topSlides: Slide[] = [
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8tUaF0TcGJH1w_pf10.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8t0aF0TcGJH1y_pf12.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8sEaF0TcGJH1r_pf05.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8sUaF0TcGJH1s_pf06.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8uUaF0TcGJH10_pf14.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8r0aF0TcGJH1q_pf04.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8skaF0TcGJH1t_pf07.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8tkaF0TcGJH1x_pf11.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8rUaF0TcGJH1o_pf02.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8tEaF0TcGJH1v_pf09.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8uEaF0TcGJH1z_pf13.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8rkaF0TcGJH1p_pf03.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8tUaF0TcGJH1w_pf10.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8t0aF0TcGJH1y_pf12.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8s0aF0TcGJH1u_pf08.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' }
+];
+
+export const bottomSlides: Slide[] = [
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/Zs3tv0aF0TcGJbrj_pf01.jpg?auto=format,compress&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8sEaF0TcGJH1r_pf05.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8r0aF0TcGJH1q_pf04.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8tkaF0TcGJH1x_pf11.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8sUaF0TcGJH1s_pf06.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8skaF0TcGJH1t_pf07.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8uUaF0TcGJH10_pf14.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8rUaF0TcGJH1o_pf02.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8tEaF0TcGJH1v_pf09.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8uEaF0TcGJH1z_pf13.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8rkaF0TcGJH1p_pf03.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8tUaF0TcGJH1w_pf10.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' },
+  { width: 672, height: 960, orientation: 'vertical', src: 'https://images.prismic.io/kaicex/ZsS8t0aF0TcGJH1y_pf12.webp?auto=compress,format&rect=0,0,1400,2000&w=375&h=536' },
+  { width: 536, height: 375, orientation: 'horizontal', src: 'https://images.prismic.io/kaicex/ZsS8s0aF0TcGJH1u_pf08.webp?auto=compress,format&rect=0,0,2000,1400&w=536&h=375' }
+];

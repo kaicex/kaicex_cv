@@ -1,0 +1,54 @@
+---
+import type { Project } from '../data/projects';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<section class="project" data-project data-id={project.id} data-astro-cid-tkm2rszc>
+    <div class="scroll-wrapper" data-astro-cid-tkm2rszc>
+        <div class="top-wrapper" data-astro-cid-tkm2rszc>
+            <h2 class="project-headline h1">{project.title}</h2>
+            <h3 class="project-sub-headline text">{project.subtitle}</h3>
+            <button class="text" data-astro-cid-tkm2rszc>Close</button>
+        </div>
+        <div class="bottom-wrapper" data-astro-cid-tkm2rszc>
+            <div class="link-wrapper" data-astro-cid-tkm2rszc>
+                <a href={project.url} target="_blank" rel="noopener" data-astro-cid-tkm2rszc>
+                    <div class="external-link" data-astro-cid-tkm2rszc>
+                        <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-astro-cid-tkm2rszc>
+                            <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z" data-astro-cid-tkm2rszc></path>
+                        </svg>
+                        <svg viewBox="0 0 7 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-astro-cid-tkm2rszc>
+                            <path d="M6.86995 0.03209L6.88126 6.08492H5.72726L5.77252 1.98936L1.462 6.29989L0.602152 5.44004L4.91268 1.12952L0.817113 1.17477L0.817114 0.0207771L6.86995 0.03209Z" data-astro-cid-tkm2rszc></path>
+                        </svg>
+                    </div>
+                    <span class="text" data-astro-cid-tkm2rszc>View Site</span>
+                </a>
+            </div>
+            <div class="text-wrapper" data-astro-cid-tkm2rszc>
+                <p class="split text">{project.description}</p>
+            </div>
+        </div>
+        <div class="media-wrapper" data-astro-cid-tkm2rszc>
+            {project.mediaType === 'video' ? (
+                <div class="video is-paused" style={`--ar: ${project.aspectRatio}`} data-astro-cid-tlwdjgud>
+                    <video playsinline loop data-astro-cid-tlwdjgud>
+                        <source src={project.mediaSrc} type="video/mp4" data-astro-cid-tlwdjgud>
+                    </video>
+                    <div class="controls play" data-astro-cid-tlwdjgud>
+                        <button data-astro-cid-tlwdjgud>Play</button>
+                    </div>
+                    <div class="controls pause" data-astro-cid-tlwdjgud>
+                        <button data-astro-cid-tlwdjgud>Pause</button>
+                    </div>
+                </div>
+            ) : (
+                <img src={project.mediaSrc} alt={project.title} />
+            )}
+        </div>
+    </div>
+</section>

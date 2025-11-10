@@ -1,0 +1,93 @@
+export interface Project {
+  id: string;
+  title: string;
+  subtitle: string;
+  url: string;
+  description: string;
+  mediaType: 'video' | 'image';
+  mediaSrc: string;
+  aspectRatio: number;
+}
+
+export const projects: Project[] = [
+  {
+    id: 'ch-harmony',
+    title: 'CH-Contrast Harmony',
+    subtitle: 'Webflow — GSAP',
+    url: 'https://ch-hermony.webflow.io/',
+    description: 'Designed and developed a portfolio website for Russian artist Varvara Cheltsova, showcasing her unique artistic style and background. Implemented GSAP for smooth animations and Lenis for enhanced scrolling experiences. The result is a visually striking and performant website that effectively presents the artist\'s work and story to a global audience.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2gqkaF0TcGJa0U_2.harmony.mp4',
+    aspectRatio: 0.56
+  },
+  {
+    id: 'tentekpro',
+    title: 'Tentek Webflow Library',
+    subtitle: 'Webflow - Memberstack - Python',
+    url: 'https://tentek.pro/',
+    description: 'Developed a toolkit for Webflow developers to streamline page creation and add custom code without a Workspace plan. This project works with free Webflow plans and includes over 1,500 pre-built components. The toolkit enhances productivity and expands design possibilities for Webflow developers of all levels.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2gKUaF0TcGJa0I_1.Tentek.mp4',
+    aspectRatio: 0.56
+  },
+  {
+    id: 'easter',
+    title: 'Nothern Easter Camp',
+    subtitle: 'Design - Webflow Development',
+    url: 'http://easter.camp',
+    description: 'Designed a vibrant Webflow website for Northern Easter Camp, highlighting daily activities and events. Incorporated eye-catching design elements, including custom lettering and decorative digits. The website successfully conveys the camp\'s energetic atmosphere and provides essential information to potential attendees and their families',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2hG0aF0TcGJa1B_6.camp.mp4',
+    aspectRatio: 0.55
+  },
+  {
+    id: 'oumuamua',
+    title: 'Oumuamua. Presale',
+    subtitle: 'Webflow — GSAP',
+    url: 'https://www.oumu.xyz/',
+    description: 'Created a Webflow landing page for the Oumuamua private sale, an interstellar memecoin project. The website features engaging content about the coin\'s concept, drawing parallels with the mysterious space object discovered in 2017. Designed to capture attention and convey the project\'s unique selling points, the landing page aims to attract potential investors and crypto enthusiasts.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2gzkaF0TcGJa0Z_3.oumua.mp4',
+    aspectRatio: 0.55
+  },
+  {
+    id: 'userinterviews',
+    title: 'User Interviews',
+    subtitle: 'Webflow Development',
+    url: 'https://www.userinterviews.com/',
+    description: 'Developed a comprehensive Webflow website for a research participant recruitment platform. Integrated multiple APIs and created various page types including blogs, participant resources, podcasts, and product pages. The result is a robust, user-friendly platform that efficiently connects researchers with participants, streamlining the study recruitment process.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2hDUaF0TcGJa07_4.inter.mp4',
+    aspectRatio: 0.55
+  },
+  {
+    id: 'treet',
+    title: 'Treet. Resale',
+    subtitle: 'Webflow Development',
+    url: 'https://www.treet.co/',
+    description: 'Built a complex Webflow website for Treet, a branded resale solution provider. Incorporated custom JavaScript for enhanced functionality, including an ROI calculator. Created multiple page types such as blogs and product pages, showcasing Treet\'s stackable resale solutions. The website effectively communicates the company\'s value proposition and various offerings to potential clients.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2hEkaF0TcGJa09_5.Treet.mp4',
+    aspectRatio: 0.55
+  },
+  {
+    id: 'epoch',
+    title: 'Epoch - Cloth brand',
+    subtitle: 'Freelance — Design & Development',
+    url: 'https://epoch-russia.ru',
+    description: 'Created an e-commerce website using Tilda for Epoch, a Russian clothing brand featuring custom designs. The website showcases the brand\'s unique aesthetic and facilitates online purchases. While not a Webflow project, this demonstrates versatility in working with different platforms to meet client needs.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2hJEaF0TcGJa1G_8epoch.mp4',
+    aspectRatio: 0.56
+  },
+  {
+    id: 'jetsbetter',
+    title: 'JetsBetter',
+    subtitle: 'Freelance - Webflow Development',
+    url: 'https://www.jetsbetter.com/',
+    description: 'Developed a dynamic landing page for Jetsbetter, a B2B private jet booking service. Utilized GSAP for smooth animations and SwiperJS for interactive elements. The website effectively communicates Jetsbetter\'s unique selling points and services to travel professionals, positioning the company as a reliable partner in the luxury travel industry.',
+    mediaType: 'video',
+    mediaSrc: 'https://kaicex.cdn.prismic.io/kaicex/Zs2hIUaF0TcGJa1C_7.jetsbetter.mp4',
+    aspectRatio: 0.55
+  }
+];
