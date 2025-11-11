@@ -20,6 +20,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		
+		<!-- Preload fonts -->
+		<link rel="preload" href="/fonts/saxmono.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/alcotton.woff2" as="font" type="font/woff2" crossorigin />
+		
 		<!-- Structured Data -->
 		<script type="application/ld+json">
 		{
@@ -79,12 +83,28 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105244291', 'ym');ym(105244291, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 		</script>
 	</head>
-	<body>
+	<body class="loading">
 		<!-- Yandex.Metrika counter -->
 		<noscript><div><img src="https://mc.yandex.ru/watch/105244291" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
 		
 		<slot />
 		<script src="../scripts/main.js"></script>
+		<script>
+			// Wait for fonts to load before showing content
+			Promise.all([
+				document.fonts.load('1em Aeonik'),
+				document.fonts.load('1em Pershot')
+			]).then(() => {
+				document.body.classList.remove('loading');
+				document.body.classList.add('is-loaded');
+			}).catch(() => {
+				// Fallback: show content after 1 second even if fonts fail
+				setTimeout(() => {
+					document.body.classList.remove('loading');
+					document.body.classList.add('is-loaded');
+				}, 1000);
+			});
+		</script>
 	</body>
 </html>

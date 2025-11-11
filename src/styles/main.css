@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Aeonik";
   src: url(/fonts/saxmono.woff2) format('woff2');
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
   font-family: "Pershot";
   src: url(/fonts/alcotton.woff2) format('woff2');
-  font-display: swap;
+  font-display: optional;
 }
 
 :root {
